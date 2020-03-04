@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/GTD/css/GTD.css">
+    <title>GTD时间清单</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="taskList">
+            <div class="inbox">
+                <div class="title">
+                    <span class="zh">收集箱</span>
+                    <span class="en">(Inbox)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name="inbox" placeholder="请输入待办事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name="inbox">
+                    </ul>
+                </div>
+            </div>
+            <div class="context-task">
+                <div class="title">
+                    <span class="zh">执行清单</span>
+                    <span class="en">(Context Task)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name='Context' placeholder="请输入要执行的事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name='Context'>
+                    </ul>
+                </div>
+            </div>
+            <div class="waiting-for-task">
+                <div class="title">
+                    <span class="zh">等待清单</span>
+                    <span class="en">(Wating For Task)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name='wating' placeholder="请输入要做的事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name='wating'>
+                    </ul>
+                </div>
+            </div>
+            <div class="plan-project-task">
+                <div class="title">
+                    <span class="zh">项目清单</span>
+                    <span class="en">(Plan Project Task)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name='plan' placeholder="请输入需要计划的事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name='plan'>
+                    </ul>
+                </div>
+            </div>
+            <div class="someday">
+                <div class="title">
+                    <span class="zh">可能清单</span>
+                    <span class="en">(Someday/May)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name="may" placeholder="请输入可能会做的事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name="may">
+                    </ul>
+                </div>
+            </div>
+            <div class="trash">
+                <div class="title">
+                    <span class="zh">回收箱</span>
+                    <span class="en">(Trash)</span>
+                </div>
+                <div class="tasks">
+                    <form>
+                        <input type="text" name="trash" placeholder="已完成事项">
+                        <i class='fa fa-times' style="color: black;"></i>
+                    </form>
+                    <ul name="trash">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="today-list">今日代办事项</div>
+            <div class="week-list">本周代办事项</div>
+            <div class="brief-list">共多少事项</div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="/GTD/js/GTD.js"></script>
+</body>
+
+</html>

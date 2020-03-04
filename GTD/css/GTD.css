@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color:#fff; */
+    background-image: linear-gradient(120deg,#487eb0,#fbc531);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+}
+.taskList{
+    /* display: inline-block; */
+}
+.inbox,.context-task,.waiting-for-task,.plan-project-task,.someday,.trash{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color:rgba(165,255,214,.5);
+}
+.title span{
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    color:rgba(25, 90, 231,.8);
+    text-align: center;
+}
+.title .zh{
+    font-size: 20px;
+}
+.tasks{
+    display: inline-block;
+    /* display: flex; */
+    font-size:16px;
+    margin:15px auto;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height:100%;
+}
+.tasks form input{
+    outline: none;
+    border: none;
+    background-color:rgba(132,220,198,.3);
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+    width: 80%;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.tasks form i{
+    position: absolute;
+    top: 8px;
+    right: 13%;
+    font-size: 16px;
+    cursor: pointer;
+    color:rgba(150,147,155,.3)!important;
+}
+.tasks form{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #FFA69E;
+}
+.tasks ul li{
+    text-align: left;
+    text-indent: 20px;
+    list-style-type: none;
+    background-color:rgba(255,104,107,.5);
+    margin: 10px;
+    position: relative;
+    word-wrap: break-word;
+    padding-right:15px;
+    color: white;
+}
+.tasks ul li:last-child{
+    margin-bottom: 0;
+}
+.tasks ul li i{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    cursor: pointer;
+    color: rgba(160,6,92,.5);
+}
+.tasks ul{
+    height: 200px;
+    overflow:auto;
+}
+/* 
+    白色：#FFFFFF
+    深绿：#84DCC6
+    浅绿：#A5FFD6
+    粉红：#FFA69E
+    桃红：#FF686B
+*/
