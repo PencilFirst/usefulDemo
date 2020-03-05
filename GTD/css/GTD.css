@@ -13,9 +13,7 @@ body{
     box-sizing: border-box;
     font-size: 0;
 }
-.taskList{
-    /* display: inline-block; */
-}
+
 .inbox,.context-task,.waiting-for-task,.plan-project-task,.someday,.trash{
     display: inline-block;
     width: 33%;
